@@ -1,0 +1,10 @@
+.fontClass {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:x-large;
+    font-weight: bold;
+    font-style:italic;
+    text-align: center;
+    text-decoration:underline;
+    color:coral;
+}
+a{text-decoration:none;}

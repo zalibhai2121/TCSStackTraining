@@ -1,0 +1,15 @@
+#d1 {
+border-color:darkred;
+border-width: 2px;
+border-style: solid;
+}
+
+#d2 {
+border-color: teal;
+border-width: 10px;
+border-style: groove;
+}
+
+#d3 {
+    border:solid blue 5px;
+}

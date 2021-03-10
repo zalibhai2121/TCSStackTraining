@@ -1,0 +1,10 @@
+div {
+   padding: 20px;
+   border: teal solid 2px;
+   margin: 30px;
+   width: 100px;
+   height: 200px;
+   float: left;
+   border-radius: 60px;
+   text-align: center;
+}
