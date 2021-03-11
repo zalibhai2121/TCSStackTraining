@@ -1,0 +1,26 @@
+div {
+    padding: 20px;
+    border: teal solid 2px;
+    margin: 30px;
+    width: 100px;
+    height: 200px;
+    float: left;
+    border-radius: 60px;
+    text-align: center;
+    font-size:15px;
+    animation-name: myanimaiton;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+ }
+/*  for animation we need @key frames which contains set of rules to execute the animation */
+
+ @keyframes myanimaiton{
+     0% {background-color: red;}
+     15% {background-color: orange;}
+     30% {background-color: yellow;}
+     45% {background-color: green;}
+     60% {background-color: blue;}
+     85% {background-color: indigo;}
+     100% {background-color: violet;}
+
+ }
