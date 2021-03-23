@@ -3,20 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ChildComponent } from './child.component';
-import { Child1 } from './child1.component';
+import { DataBindingComponent } from './data-binding/data-binding.component';
+import { StructureDirectiveComponent } from './structure-directive/structure-directive.component';
 
 @NgModule({
   declarations: [
-    AppComponent, // all components
-    ChildComponent,
-    Child1
+    AppComponent,
+    DataBindingComponent,
+    StructureDirectiveComponent
   ],
   imports: [
-    BrowserModule, // output in browser
+    BrowserModule,
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent] // first or parent module
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
