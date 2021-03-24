@@ -1,0 +1,21 @@
+<div>
+    <h2>Model Driven Form</h2>
+    <form class = "container"[formGroup] = 'loginRef'(ngSubmit) = "checkUser()">
+        <label>Username</label>
+        <input type="text" formControlName = "user"/> <br/>
+        <label>password</label>
+        <input type="password" formControlName = "pass"/> <br/>
+        <input type="submit" value="submit" class = "btn-primary"/>
+        <input type="reset" value="reset" class = "btn-secondary"/>
+    </form>
+    {{msg}}
+</div>
+<!-- Reactive form 
+    component --- view 
+    angular provided API to achive mdf
+    formgroup 
+    formcontrol
+    Textfield/ psswd/ radiobutton/checkbock -- form control
+    formgroup == contains more than one formcontrol a.w.a another form group
+    reactiveformsmodule in app.module.ts
+-->
