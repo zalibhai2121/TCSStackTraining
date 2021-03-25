@@ -13,6 +13,7 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
   }
   homePage(): void {
+    sessionStorage.setItem('token', '123');
     this.router.navigate(['home']);
   }
 
