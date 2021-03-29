@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Fake } from '../fake.model';
 import { FakeService } from '../fake.service';
 import { MyService } from '../mycustom.service';
 
@@ -14,7 +15,9 @@ export class FirstComponent implements OnInit {
 
   constructor(public service: FakeService) { }
 
-  ngOnInit(): void {
+  fakeData: Array<Fake> = [];
+  ngOnInit(): void { // this is life cycle method of component it calls only once automatically
+    this.service.loadFakeData().subscribe(data => this.fakeData = data);
   }
   fun(): void {
     const obj = new MyService();
@@ -24,7 +27,7 @@ export class FirstComponent implements OnInit {
     this.msg1 = this.service.sayHello();
   }
   callFakeService(): void {
-    this.service.loadFakeData();
+    // this.service.loadFakeData().subscribe(data => this.fakeData = data);
   }
 
 }

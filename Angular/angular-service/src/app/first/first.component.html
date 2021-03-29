@@ -1,7 +1,24 @@
 <div>
-    <input type="button" value="Call Service without DI" (click) = 'fun()'/> <br/>
+    <input type="button" value="Call Service without DI" (click)='fun()' /> <br />
     {{msg}}
-    <input type="button" value="Call Service with DI" (click) = 'display()'/> <br/>
+    <input type="button" value="Call Service with DI" (click)='display()' /> <br />
     {{msg1}}
-    <input type="button" value="Call Fake Service" (click) = 'callFakeService()'/> <br/>
+    <input type="button" value="Call Fake Service" (click)='callFakeService()' /> <br />
+
+    <table border = "1">
+        <tr>
+            <th>User</th>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Completed</th>
+        </tr>
+        <tr *ngFor='let data of fakeData'>
+            <td>{{data.userId}}</td>
+            <td>{{data.id}}</td>
+            <td>{{data.title}}</td>
+            <td>{{data.completed}}</td>
+        </tr>
+    </table>
+
+
 </div>

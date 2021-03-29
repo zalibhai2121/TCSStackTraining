@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { FakeService } from './fake.service';
 import { FirstComponent } from './first/first.component';
 import { SecondComponent } from './second/second.component';
+import { EmployeeRetrieveComponent } from './employee-retrieve/employee-retrieve.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FirstComponent,
-    SecondComponent
+    SecondComponent,
+    EmployeeRetrieveComponent
   ],
   imports: [
     BrowserModule,

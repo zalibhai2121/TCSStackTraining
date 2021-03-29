@@ -2,16 +2,16 @@
     <h2>Login Page using template driven form</h2>
     <form #userRef = "ngForm" (ngSubmit) = "checkUser(userRef.value)">
         <label for="">Username</label>
-        <input type="text" name = "user" ngModel/> <br/>
+        <input type="text" name = "user" ngModel required minlength="2"/> <br/>
         <label for="">Password</label>
-        <input type="password" name = "pass" ngModel/> <br/>
-        <input type="submit" value="submit"/> 
+        <input type="password" name = "pass" ngModel required pattern = "TCS\d{3}"/> <br/>
+        <input type="submit" value="submit" [disabled] = '!userRef.valid'/> 
         <input type="reset" value="reset"/>
     </form>
     {{msg}}
 </div>
  <!-- submit always checks action if there are no action page auto refresh
     ngForm predefined, imported in app.module.ts  
-    pass the refrence, pass obj through function
+    pass the refrence, pass obj through functiont
     Form Ref = 
     -->

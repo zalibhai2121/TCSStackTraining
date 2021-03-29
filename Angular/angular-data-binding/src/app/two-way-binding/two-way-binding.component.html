@@ -1,0 +1,14 @@
+<div>
+    <h2>Two way binfing</h2>
+
+    First name is {{fname}}
+    <br>
+    <input type="text" [(ngModel)] = "fname"/>
+    <h2>One way</h2>
+    Age is {{age}} <br>
+    <input type="text" [value] = "age"/>
+
+    <h2>Two way with property and event binding</h2>
+    SkillSet {{skill}} <br>
+    <input type="text" [value] = 'skill' #skillRef (keyup) = 'updateSkill(skillRef.value)'>
+</div>

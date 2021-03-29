@@ -1,0 +1,9 @@
+[
+    {"id": 100, "name": "Jin", "Salary": 12000},
+    {"id": 101, "name": "Suga", "Salary": 14000},
+    {"id": 102, "name": "Namjoon", "Salary": 16000},
+    {"id": 103, "name": "J-Hope", "Salary": 18000},
+    {"id": 104, "name": "Jimin", "Salary": 12000},
+    {"id": 105, "name": "V", "Salary": 14000},
+    {"id": 106, "name": "Jungkook", "Salary": 16000}
+]
