@@ -1,10 +1,13 @@
 let express = require("express");
-let router = express.Router(); //pass flow to controller
-let productController = require("../controlleer/product.controller.js");
+let router = express.Router();  //router reference. 
+let ProductController = require("../controller/product.controller.js");
 
-//mapping sub path with http method
-router.get("/allProductDetails", productController.getProductDetails);
+//mapping sub path with http methods. 
+router.get("/allProductDetails",ProductController.getProductDetails);
+router.get("/retrieveProductById/:pid",ProductController.getProductById)
+router.post("/storeProductDetails",ProductController.storeProductDetails);
+router.delete("/deleteProductById/:pid",ProductController.deleteProductById);
+router.put("/updateProductPrice",ProductController.updateProductPrice);
 
 
-
-module.exports = router;
+module.exports=router;
